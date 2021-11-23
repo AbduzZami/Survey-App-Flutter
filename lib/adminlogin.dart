@@ -143,6 +143,19 @@ class _AdminLoginState extends State<AdminLogin> {
                       
                     }
                   ),
+                  const SizedBox(height: 20.0,),
+                  GestureDetector(
+                    child: const Text(
+                      "Not an admin?."
+                      ,style: TextStyle(
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const Login()));
+                    }
+                  ),
                 ],
               ),
             )
